@@ -3,21 +3,18 @@ import lstyle from './layout.module.css'
 
 const Layout = ({title, descr, PokemonIMG, colorBg}) => {
 
-    colorBg  = {
-        backgroundColor : 'red'
-    }
-
-
+    const backColor = colorBg ?  {backgroundColor: '#e2e2e2'} : null
+    const imagePoki = {  backgroundImage: `url(${PokemonIMG})`}
 
     return (
         <section className={lstyle.root}>
             <div className={lstyle.wrapper}>
-                <article>
+                <article style={{...backColor, ...imagePoki}}>
                     <div className={lstyle.title}>
                         <h3>{title}</h3>
                         <span className={lstyle.separator}></span>
                     </div>
-                    <div className={lstyle.full}>
+                    <div className={`${lstyle.desc} ${lstyle.full}`}>
                         <p>{descr}</p>
                     </div>
                 </article>
