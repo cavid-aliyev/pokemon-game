@@ -1,6 +1,6 @@
 import Header from '../Header';
 import Layout from '../Layout';
-import Footer from '../Footer'
+import Footer from '../Footer';
 import PokemonIMG from '../../assets/pokigame.jpg'
 
 const App = () => {
@@ -11,16 +11,23 @@ const App = () => {
           descr = "This is Description!"/>
     <Layout
           title = "Layout title 1 "
-          descr = "Layout Description 1"
-          PokemonIMG={PokemonIMG}/>
+          PokemonIMG={PokemonIMG}>
+
+            <p>Layout Description 1</p>
+
+      </Layout>
     <Layout 
           title = "Layout title 2"
-          descr = "Layout Description 2"
-          colorBg/>
+          colorBg={'#e2e2e2'} >
+
+            <p>Layout Description 2</p>
+
+      </Layout>
     <Layout
           title = "Layout title 3"
-          descr = "Layout Description 3"
-          PokemonIMG = {PokemonIMG}/>
+          PokemonIMG = {PokemonIMG}>
+            <p>Layout Description 3</p>
+      </Layout>
     <Footer/>
     </>
   );
