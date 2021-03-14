@@ -7,7 +7,7 @@ const PokemonCard = ({cards}) =>{
     const [isActive, setActive] = useState(false)
 
     const handleCLick = () => {
-        setActive(true)
+        setActive(!isActive)
     }
 
 

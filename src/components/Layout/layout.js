@@ -1,7 +1,7 @@
 import lstyle from './layout.module.css'
 
 
-const Layout = ({title, PokemonIMG, colorBg, children}) => {
+const Layout = ({title, PokemonIMG, colorBg, children, PokemonImage}) => {
 
 
     const layoutStyle = {  
@@ -9,10 +9,12 @@ const Layout = ({title, PokemonIMG, colorBg, children}) => {
                 backgroundColor: colorBg 
     }
 
+
+
     return (
-        <section className={lstyle.root}>
+        <section className={lstyle.root} style={layoutStyle}>
             <div className={lstyle.wrapper}>
-                <article style={layoutStyle}>
+                <article>
                     <div className={lstyle.title}>
                         <h3>{title}</h3>
                         <span className={lstyle.separator}></span>

@@ -1,7 +1,8 @@
 import Header from '../Header';
 import Layout from '../Layout';
 import Footer from '../Footer';
-import PokemonIMG from '../../assets/pokigame.jpg';
+import PokemonIMG from '../../assets/backfon.png';
+import Photo from '../../assets/backfontwo.jpg';
 import PokemonCard from '../PokemonCard';
 
 import './App.css'
@@ -147,30 +148,26 @@ const App = () => {
   return (
     <>
     <Header 
-          title = "This is title"
-          descr = "This is Description!"/>
+          title = "Pokemon Carts"
+          descr = "Returning to the world of collecting pokemon cards?"/>
     <Layout
-          title = "Layout title 1 "
+          title = "About Pokemons "
           PokemonIMG={PokemonIMG}>
 
-            <p>Layout Description 1</p>
+            <p>The legendary world of Pokémon first reached Australian and New Zealand shores in 1998 with Pokémon Red Version and Pokémon Blue Version for Game Boy, becoming an instant sensation that transcended fans of all ages and backgrounds.
+
+Since the 1996 debut of Pokémon Red and Pokémon Green for Game Boy in Japan, this iconic series has sold more than 279 million video games globally, with avid Aussie and Kiwi Pokémon fans continuing to grow their Pokémon collections.</p>
 
       </Layout>
     <Layout 
           title = "Cards"
-          colorBg={'#e2e2e2'} >
+          colorBg={'#f7f538'}>
 
-            <p>In the game two players face off against one another, one side playing as "blue", 
-               the other as "red" on a 3x3 grid.Each player has five cards in a hand and 
-               the aim is to capture the opponent's cards by turning them into the player's 
-               own color of red or blue.To win, a majority of the total ten cards played 
-               (including the one card that is not placed on the board) 
-               must be of the player's card color. To do this, the player must capture 
-               cards by placing a card adjacent to an opponent's card whereupon the 'ranks' 
-               of the sides where the two cards touch will be compared. If the rank of the 
-               opponent's card is higher than the player's card, the player's card will be 
-               captured and turned into the opponent's color. If the player's rank is higher, 
-               the opponent's card will be captured and changed into the player's color instead. 
+            <p>Pokémon are raised and commanded by their owners (called “Trainers”). During their adventures, Pokémon grow, level up and become more experienced and even, on occasion, evolve into stronger Pokémon.
+
+There are over a dozen different types of Pokémon, such as Fire type, Psychic type, and Dragon type. Every Pokémon type comes with both advantages as well as disadvantages when battling different Pokémon types.
+
+For instance, a Fire type Pokémon has the edge against Grass type Pokémon, but will be at a disadvantage against Water type Pokémon. This makes strategic thinking, positioning and use of the Pokémon in your team a crucial part of battles. 
             </p>
 
             <div className="flex">
@@ -181,9 +178,11 @@ const App = () => {
 
       </Layout>
     <Layout
-          title = "Layout title 3"
+          title = "Why Pokemons?"
           PokemonIMG = {PokemonIMG}>
-            <p>Layout Description 3</p>
+            <p>The first Pokémon video games were released in Australia and New Zealand for the Game Boy in 1998, and the series has driven the popularity of Pokémon ever since. Pokémon games have appeared on Nintendo systems including Nintendo 3DS and Wii U.
+
+In most games, players play as Trainers to undertake adventures with their Pokémon in search of new types of Pokémon to add to their collection, participate in battles with other Trainers and Gym Leaders to obtain Gym Badges and to explore mystical new lands.</p>
       </Layout>
     <Footer/>
     </>
