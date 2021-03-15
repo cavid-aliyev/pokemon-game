@@ -2,7 +2,6 @@ import Header from '../Header';
 import Layout from '../Layout';
 import Footer from '../Footer';
 import PokemonIMG from '../../assets/backfon.png';
-import Photo from '../../assets/backfontwo.jpg';
 import PokemonCard from '../PokemonCard';
 
 import './App.css'
